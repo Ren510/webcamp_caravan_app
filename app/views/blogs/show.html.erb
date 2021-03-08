@@ -60,7 +60,8 @@
       <p class="single-text">
         <%= @blog.body %>
         <!-- body部分 下で変更します -->
-　　　<%= link_to"編集",edit_blog_path(@blog)%
+　　　<%= link_to"編集",edit_blog_path(@blog) %>
+　　　<%= link_to "削除", blog_path(@blog), method: :delete %>
         <!-- body部分 ここまで -->
       </p>
       <a href="#">編集</a>
